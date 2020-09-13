@@ -1,18 +1,19 @@
 function toggleMenu() {
   let navbar = document.getElementById("navbar");
-  console.log(navbar.style);
 
-  /*
-  if (navbar.style.display === "block") {
-    navbar.style.display = "none";
-  } else {
-    navbar.style.display = "block";
-  }
-  */
-
-  if (navbar.style.height === "auto") {
+  if (navbar.style.height === "350px") {
     navbar.style.height = "0";
+    //navbar.style.opacity = "0";
   } else {
-    navbar.style.height = "auto";
+    navbar.style.height = "350px";
+    //navbar.style.opacity = "1";
+  }
+
+  let menuicon = document.getElementById("menubutton");
+
+  if (menuicon.className === "closed") {
+    menuicon.className = "open";
+  } else {
+    menuicon.className = "closed";
   }
 }
