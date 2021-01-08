@@ -15,6 +15,18 @@ body {
   line-height: 1.3;
 }
 
+@media only screen and (min-width: 992px) {
+  p {
+    font-size: 1vw;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    font-size: 0.6em;
+  }
+}
+
 h1 {
   color: var(--MainColor);
 }
@@ -121,25 +133,6 @@ h1 {
     transform: rotate(-45deg);
     top: 50%;
   }
-
-  /*
-  #menubutton {
-    margin: auto;
-    padding: 10px;
-    height: auto;
-  }
-  */
-  /*
-  .bar1,
-  .bar2,
-  .bar3 {
-    width: 30px;
-    height: 5px;
-    background-color: white;
-    margin: 5px 0;
-    border-radius: 5px;
-  }
-  */
 
   #navbar {
     width: 100%;
@@ -300,15 +293,15 @@ section {
   grid-area: text;
   text-align: start;
   margin-left: 4vw;
+  margin-right: 10vw;
 }
 
 #etusivu .etusivuTekstit h5 {
   margin: 2vw 0 2vw 0;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 #etusivu .etusivuTekstit p {
   margin: 2vw 0 2vw 0;
-  font-size: 1.1em;
 }
 #etusivu .etusivuTekstit h3 {
   margin: 2vw 0 2vw 0;
@@ -384,15 +377,6 @@ section {
   }
 }
 
-@media only screen and (min-width: 993px) {
-  #infoNav {
-    display: none;
-  }
-  #info {
-    display: none;
-  }
-}
-
 #hinnasto h1 {
   color: var(--MainColor);
   margin: 2vw;
@@ -434,7 +418,6 @@ section {
 
 #ajanvaraus .ajanvaraustekstit {
   position: relative;
-  z-index: -1;
   width: 80%;
   height: 100%;
   text-align: left;
@@ -510,11 +493,25 @@ footer {
 
 footer p {
   color: #fff;
-  font-size: 2vw;
+  font-size: 0.8em;
+  /*
+  font-size: 1.7vw;
+  */
 }
 
 @media only screen and (max-width: 992px) {
   footer {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  footer p {
+    flex-grow: 1;
+
+    font-size: 1em;
+    word-break: break-all;
+    text-align: center;
+    margin: 0 16px;
   }
 }
