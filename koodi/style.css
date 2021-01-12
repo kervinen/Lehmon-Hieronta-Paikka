@@ -41,6 +41,9 @@ h1 {
   background-color: rgba(229, 210, 252, 0.03);
 }
 
+.header {
+  z-index: 1;
+}
 @media only screen and (max-width: 669px) {
   .header {
     position: fixed;
@@ -145,6 +148,7 @@ h1 {
     overflow: hidden;
     transition-property: height;
     transition-duration: 0.3s;
+    z-index: 3;
   }
 
   #navbar ul {
@@ -422,6 +426,7 @@ section {
   height: 100%;
   text-align: left;
   margin-left: 10vw;
+  z-index: 0;
 }
 #ajanvaraus .ajanvaraustekstit h1 {
   padding: 3vw 0 3vw 0;
