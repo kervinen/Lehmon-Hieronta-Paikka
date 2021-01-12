@@ -326,7 +326,6 @@ section {
 @media only screen and (min-width: 993px) {
   #etusivu {
     display: grid;
-    /*background-color: yellow;*/
 
     grid-template-rows: 75px auto auto auto;
     grid-template-columns: minmax(20px, 100px) 4fr 4fr 4fr minmax(20px, 100px);
@@ -436,15 +435,6 @@ section {
 }
 
 #yrityksille {
-  /*
-    display: grid;
-    grid-template-areas:
-    ". . ."
-    ". yritysotsikko ."
-    ". yritysteksti .";
-    grid-template-columns: 16vw 1fr 1vw;
-    grid-template-rows: 75px 1fr 4fr;
-    */
   text-align: left;
 }
 
@@ -499,9 +489,10 @@ footer {
 footer p {
   color: #fff;
   font-size: 0.8em;
-  /*
-  font-size: 1.7vw;
-  */
+}
+
+footer a {
+  font-size: 0.8em;
 }
 
 @media only screen and (max-width: 992px) {
@@ -511,12 +502,21 @@ footer p {
     justify-content: space-between;
   }
 
-  footer p {
+  footer p,
+  footer a {
     flex-grow: 1;
 
     font-size: 1em;
     word-break: break-all;
     text-align: center;
     margin: 0 16px;
+  }
+}
+
+@media only screen and (min-width: 670px) {
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    pointer-events: none;
   }
 }
