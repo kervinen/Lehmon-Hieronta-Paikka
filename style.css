@@ -464,6 +464,7 @@ section {
     margin: 75px 5% 0 5%;
     padding-right: 0px;
     height: 100%;
+    margin-bottom: 60px;
   }
   #yrityksille .yritystekstit {
     display: flex;
@@ -473,7 +474,7 @@ section {
   .yritysTekstit h5,
   .yritysTekstit p {
     padding: 20px 0 20px 0;
-    font-size: 0.8em;
+    font-size: 1em;
   }
 }
 
