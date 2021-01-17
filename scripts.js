@@ -1,11 +1,11 @@
 function toggleMenu() {
   let navbar = document.getElementById("navbar");
 
-  if (navbar.style.height === "350px") {
+  if (navbar.style.height === "auto") {
     navbar.style.height = "0";
     //navbar.style.opacity = "0";
   } else {
-    navbar.style.height = "350px";
+    navbar.style.height = "auto";
     //navbar.style.opacity = "1";
   }
 
