@@ -153,6 +153,7 @@ h1 {
 
   #navbar ul {
     width: 100%;
+    list-style: none;
   }
 
   #navbar ul li {
@@ -180,28 +181,6 @@ h1 {
     height: 3px;
     width: 160%;
   }
-
-  /*
-  #navbar ul li a:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: -10%;
-    right: 110%;
-    bottom: 3px;
-    background: white;
-    height: 3px;
-    transition-property: right;
-    transition-duration: 0.4s;
-    transition-timing-function: ease-in-out;
-  }
-
-  #navbar ul li a:hover::after,
-  #navbar ul li a:active::after,
-  #navbar ul li a:focus::after {
-    right: -10%;
-  }
-  */
 }
 
 @media only screen and (min-width: 670px) {
@@ -213,6 +192,7 @@ h1 {
     justify-content: center;
     border-bottom: 1px solid var(MainColor);
     background-color: rgba(120, 191, 34, 0.9);
+    z-index: 3;
   }
 
   #navbar ul {
@@ -232,11 +212,14 @@ h1 {
     text-decoration: none;
     color: #fff;
     padding: 5px;
+
+    /*
     background-color: #70b41d;
     border-right: 2px solid #8dd435;
     border-top: 2px solid #8dd435;
 
     border-radius: 10px;
+    */
     /*border-bottom: 0px solid #E5D2FC;*/
   }
 
@@ -300,14 +283,12 @@ section {
   margin-right: 10vw;
 }
 
-#etusivu .etusivuTekstit h5 {
+#etusivu h5,
+#etusivu h3 {
   margin: 2vw 0 2vw 0;
-  font-size: 0.8em;
+  font-size: 0.9vw;
 }
 #etusivu .etusivuTekstit p {
-  margin: 2vw 0 2vw 0;
-}
-#etusivu .etusivuTekstit h3 {
   margin: 2vw 0 2vw 0;
 }
 
@@ -365,6 +346,7 @@ section {
   }
 
   #etusivu .etusivuTekstit h3 {
+    font-size: 1em;
     padding: 10px;
   }
 
@@ -421,16 +403,14 @@ section {
 
 #ajanvaraus .ajanvaraustekstit {
   position: relative;
-  width: 80%;
   height: 100%;
+  width: 100%;
   text-align: left;
-  margin-left: 10vw;
+  margin: 4vw;
   z-index: 0;
 }
 #ajanvaraus .ajanvaraustekstit h1 {
-  padding: 3vw 0 3vw 0;
-}
-#ajanvaraus .ajanvaraustekstit h5 {
+  margin-left: 10vw;
   padding: 3vw 0 3vw 0;
 }
 
@@ -439,7 +419,7 @@ section {
 }
 
 .yrityksilleKaikkiTekstit {
-  margin-left: 16vw;
+  margin-left: 10vw;
   padding-right: 30%;
 }
 
@@ -449,11 +429,12 @@ section {
   color: var(--MainColor);
   width: minmax(50%, 80%);
   padding-bottom: 5vw;
-  z-index: -2;
+  z-index: -1;
 }
 
 .yritysTekstit h5 {
   padding-bottom: 1vw;
+  font-size: 0.9vw;
 }
 .yritysTekstit p {
   padding: 1vw 0;
