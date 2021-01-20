@@ -414,6 +414,12 @@ section {
   padding: 3vw 0 3vw 0;
 }
 
+@media only screen and (max-width: 669px) {
+  #ajanvaraus .ajanvaraustekstit h1 {
+    margin-left: 5%;
+  }
+}
+
 #yrityksille {
   text-align: left;
 }
