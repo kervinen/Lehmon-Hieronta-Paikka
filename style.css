@@ -17,13 +17,13 @@ body {
 
 @media only screen and (min-width: 992px) {
   p {
-    font-size: 1vw;
+    font-size: 1em;
   }
 }
 
 @media only screen and (max-width: 992px) {
   body {
-    font-size: 0.6em;
+    font-size: 1em;
   }
 }
 
@@ -286,7 +286,7 @@ section {
 #etusivu h5,
 #etusivu h3 {
   margin: 2vw 0 2vw 0;
-  font-size: 0.9vw;
+  font-size: 1.2em;
 }
 #etusivu .etusivuTekstit p {
   margin: 2vw 0 2vw 0;
@@ -414,9 +414,34 @@ section {
   padding: 3vw 0 3vw 0;
 }
 
+#ajanvaraus .aukioloajatTausta {
+  width: max-content;
+  padding: 20px 150px 20px 0;
+  background-color: #78bf22;
+}
+
+#ajanvaraus .aukioloTekstit {
+  margin-left: 10vw;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#ajanvaraus .aukioloTekstit p,
+#ajanvaraus .aukioloTekstit h2 {
+  color: white;
+}
+
 @media only screen and (max-width: 669px) {
-  #ajanvaraus .ajanvaraustekstit h1 {
+  #ajanvaraus .aukioloajatTausta {
+    padding-right: 60px;
+  }
+  #ajanvaraus .ajanvaraustekstit {
     margin-left: 5%;
+  }
+
+  #ajanvaraus p,
+  #ajanvaraus h2 {
+    font-size: 1em;
   }
 }
 
@@ -426,7 +451,7 @@ section {
 
 .yrityksilleKaikkiTekstit {
   margin-left: 10vw;
-  padding-right: 30%;
+  padding-right: 40%;
 }
 
 #yrityksille h1 {
@@ -440,7 +465,7 @@ section {
 
 .yritysTekstit h5 {
   padding-bottom: 1vw;
-  font-size: 0.9vw;
+  font-size: 1.2em;
 }
 .yritysTekstit p {
   padding: 1vw 0;
@@ -476,11 +501,11 @@ footer {
 
 footer p {
   color: #fff;
-  font-size: 0.8em;
+  font-size: min(1.5vw, 1.6em);
 }
 
 footer a {
-  font-size: 0.8em;
+  font-size: min(1.5vw, 1.5em);
 }
 
 @media only screen and (max-width: 992px) {
