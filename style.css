@@ -413,6 +413,10 @@ section {
 #ajanvaraus .aukioloTekstit p,
 #ajanvaraus .aukioloTekstit h2 {
   color: white;
+  font-weight: bold;
+}
+#ajanvaraus .aukioloTekstit h2 {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 669px) {
