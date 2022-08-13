@@ -40,12 +40,14 @@ h1 {
 .header {
   z-index: 1;
 }
+
 @media only screen and (max-width: 669px) {
   .header {
     position: fixed;
     width: 100%;
     background-color: rgba(120, 191, 34, 0.9);
   }
+
   .header-top {
     display: flex;
     justify-content: space-between;
@@ -104,10 +106,12 @@ h1 {
   #menubutton.closed #bar1 {
     top: 0px;
   }
+
   #menubutton.closed #bar2,
   #menubutton.closed #bar3 {
     top: 12px;
   }
+
   #menubutton.closed #bar4 {
     top: 24px;
   }
@@ -118,6 +122,7 @@ h1 {
     width: 0%;
     left: 50%;
   }
+
   #menubutton.open #bar2 {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -125,6 +130,7 @@ h1 {
     transform: rotate(45deg);
     top: 50%;
   }
+
   #menubutton.open #bar3 {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -163,6 +169,7 @@ h1 {
     text-decoration: none;
     font-size: 1.1em;
   }
+
   #navbar ul li:last-child {
     margin-bottom: 30px;
   }
@@ -272,6 +279,7 @@ section {
   margin: 2vw 0 2vw 0;
   font-size: 1.2em;
 }
+
 #etusivu .etusivuTekstit p {
   margin: 2vw 0 2vw 0;
 }
@@ -350,8 +358,22 @@ section {
   color: var(--MainColor);
   margin: 2vw;
 }
+
 #hinnasto h5 {
   margin: 0.9vw;
+}
+
+#hinnasto .maksutavat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+#hinnasto img {
+  margin-left: 5px;
+  margin-bottom: 2px;
+  height: 20px;
 }
 
 #hinnasto .lahjakorttiTaulukko {
@@ -373,9 +395,11 @@ section {
   #hinnasto .alennus {
     display: none;
   }
+
   #hinnasto table tr td {
     border-right: 0px solid black;
   }
+
   #hinnasto table tr td:nth-child(1) {
     border-right: 1px solid black;
   }
@@ -393,6 +417,7 @@ section {
   margin: 4vw;
   z-index: 0;
 }
+
 #ajanvaraus .ajanvaraustekstit h1 {
   margin-left: 10vw;
   padding: 3vw 0 3vw 0;
@@ -415,6 +440,7 @@ section {
   color: white;
   font-weight: 600;
 }
+
 #ajanvaraus .aukioloTekstit h2 {
   text-decoration: underline;
 }
@@ -423,6 +449,7 @@ section {
   #ajanvaraus .aukioloajatTausta {
     padding-right: 60px;
   }
+
   #ajanvaraus .ajanvaraustekstit {
     margin-left: 5%;
   }
@@ -455,6 +482,7 @@ section {
   padding-bottom: 1vw;
   font-size: 1.2em;
 }
+
 .yritysTekstit p {
   padding: 1vw 0;
 }
@@ -466,11 +494,13 @@ section {
     height: 100%;
     margin-bottom: 60px;
   }
+
   #yrityksille .yritystekstit {
     display: flex;
     height: auto;
     justify-content: space-around;
   }
+
   .yritysTekstit h5,
   .yritysTekstit p {
     padding: 20px 0 20px 0;
