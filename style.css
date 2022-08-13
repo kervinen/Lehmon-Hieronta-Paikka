@@ -257,12 +257,19 @@ section {
   scroll-snap-align: center;
 }
 
-#etusivu h1 {
+#etusivu {
+  margin-left: 4vw;
+}
+
+#etusivu .header {
   grid-area: header;
+  text-align: left;
+}
+
+#etusivu h1 {
   font-family: "Satisfy", cursive;
   color: var(--MainColor);
   text-align: start;
-  margin-left: 4vw;
   font-size: 5.5vw;
   margin-top: 2vw;
 }
@@ -270,7 +277,6 @@ section {
 #etusivu .etusivuTekstit {
   grid-area: text;
   text-align: start;
-  margin-left: 4vw;
   margin-right: 10vw;
 }
 
@@ -323,7 +329,11 @@ section {
       ". text .";
   }
 
-  #etusivu h1 {
+  #etusivu .header p {
+    text-align: center;
+  }
+
+  #etusivu .header h1 {
     text-align: center;
     font-size: 8vw;
   }
@@ -349,7 +359,7 @@ section {
 }
 
 @media only screen and (max-width: 669px) {
-  #etusivu h1 {
+  #etusivu .header {
     display: none;
   }
 }
