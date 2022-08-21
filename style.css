@@ -266,12 +266,16 @@ section {
   text-align: left;
 }
 
-#etusivu h1 {
+#etusivu .header h1 {
   font-family: "Satisfy", cursive;
   color: var(--MainColor);
   text-align: start;
   font-size: 5.5vw;
   margin-top: 2vw;
+}
+
+#etusivu .header p {
+  font-weight: bold;
 }
 
 #etusivu .etusivuTekstit {
