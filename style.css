@@ -408,7 +408,7 @@ section {
 }
 
 #hinnasto table tr td:last-child {
-  border-right: 0px;
+  border-right: 0px solid black;
 }
 
 @media only screen and (max-width: 669px) {
@@ -417,7 +417,7 @@ section {
   }
 
   #hinnasto table tr td {
-    border-right: 0px;
+    border-right: 0px solid black;
   }
 
   #hinnasto table tr td:nth-child(1) {
